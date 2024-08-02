@@ -19,8 +19,8 @@ app.post('/process-video', (req, res) => {
   ffmpeg(inputFilePath)
     .outputOptions('-vf', 'scale=-1:360') // 360p
     .on('end', function() {
-        console.log('Processing finished successfully');
-        res.status(200).send('Processing finished successfully');
+        console.log('Video Processed Successfully');
+        res.status(200).send('Video Processed Successfully');
     })
     .on('error', function(err: any) {
         console.log('An error occurred: ' + err.message);
@@ -31,5 +31,5 @@ app.post('/process-video', (req, res) => {
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+    console.log('Server is running on port ' + port);
 });
