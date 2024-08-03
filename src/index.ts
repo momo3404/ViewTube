@@ -13,31 +13,6 @@ setupDirectories();
 const app = express();
 app.use(express.json());
 
-// app.post('/process-video', (req, res) => {
-
-//   // Get the path of the input video file from the request body
-//   const inputFilePath = req.body.inputFilePath;
-//   const outputFilePath = req.body.outputFilePath;
-
-//   // Check if the input file path is defined
-//   if (!inputFilePath || !outputFilePath) {
-//     return res.status(400).send('Bad Request: Incorrect file path');
-//   }
-
-//   // Create the ffmpeg command
-//   ffmpeg(inputFilePath)
-//     .outputOptions('-vf', 'scale=-1:360') // 360p
-//     .on('end', function() {
-//         console.log('Video Processed Successfully');
-//         res.status(200).send('Video Processed Successfully');
-//     })
-//     .on('error', function(err: any) {
-//         console.log('An error occurred: ' + err.message);
-//         res.status(500).send('An error occurred: ' + err.message);
-//     })
-//     .save(outputFilePath);
-// });
-
 app.post('/process-video', async (req, res) => {
 
   // Get the bucket and filename from the Cloud Pub/Sub message
@@ -86,7 +61,7 @@ app.post('/process-video', async (req, res) => {
   return res.status(200).send('Processing finished successfully!');
 });
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log('Server is running on port ' + port);
 });

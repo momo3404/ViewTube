@@ -21,7 +21,6 @@ export function setupDirectories(){
     ensureDirectoryExistence(localProcessedVidPath);
 }
 
-
 export function convertVideo(rawVidName: string, processedVidName: string){
     return new Promise<void>((resolve, reject) =>{
         ffmpeg(`${localRawVidPath}/${rawVidName}`)
