@@ -2,3 +2,4 @@
 node_modules
 testvid.mp4
 processed-testvid.mp4
+/vt-web-client/app/firebase/firebase.ts
