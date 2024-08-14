@@ -8,7 +8,7 @@ This web app is a youtube clone that allows users to sign in through Google and 
 TypeScript, Next.js, Express.js\
 Docker, FFmpeg\
 Firebase Auth/Functions/Firestore\
-Google Cloud Storage/ Pub/Sub / Cloud Run\
+Google Cloud Storage/ Pub/Sub / Cloud Run
 
 ## Flow of Operations
 ### 1. User Authentication: 
@@ -23,10 +23,10 @@ Users can view processed videos through the web client, which fetches video data
 ### For a more detailed explanation of the architecture, [click here](https://github.com/momo3404/ViewTube/wiki)
 
 ## References
-Firebase Auth: https://firebase.google.com/docs/auth\
-Cloud Storage Signed URLs: https://cloud.google.com/storage/docs/access-control/signed-urls\
-Pub/Sub Push subscriptions: https://cloud.google.com/pubsub/docs/push\
-Using Pub/Sub with Cloud Storage: https://cloud.google.com/storage/docs/pubsub-notifications\
-Using Pub/Sub with Cloud Run: https://cloud.google.com/run/docs/tutorials/pubsub\
-Google Cloud Storage Client Libraries: https://cloud.google.com/storage/docs/reference/libraries#client-libraries-usage-nodejs\
+Firebase Auth: https://firebase.google.com/docs/auth \
+Cloud Storage Signed URLs: https://cloud.google.com/storage/docs/access-control/signed-urls \
+Pub/Sub Push subscriptions: https://cloud.google.com/pubsub/docs/push \
+Using Pub/Sub with Cloud Storage: https://cloud.google.com/storage/docs/pubsub-notifications \
+Using Pub/Sub with Cloud Run: https://cloud.google.com/run/docs/tutorials/pubsub \
+Google Cloud Storage Client Libraries: https://cloud.google.com/storage/docs/reference/libraries#client-libraries-usage-nodejs
 
